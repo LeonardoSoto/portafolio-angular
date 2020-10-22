@@ -30,12 +30,13 @@ private CargarInfo(){
 
 private CargarEquipo(){
 
-  this.http.get('https://angular-html-f99a9.firebaseio.com/.json')
+  this.http.get('https://angular-html-f99a9.firebaseio.com/equipo.json')  
   .subscribe((resp:any) => {
 
     this.cargada= true;
     this.equipo= resp;
-    //console.log(resp);
+    
+    
   })
 }
 
